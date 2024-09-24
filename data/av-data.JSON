@@ -1,0 +1,22 @@
+{
+    "title": "Lady Gaga Rama",
+    "filepaths": [
+        "./media/Alejandro.mp3",
+        "./media/Bad Romance.mp3",
+        "./media/Judas.mp3",
+        "./media/Just Dance.mp3",
+        "./media/Paparazzi.mp3",
+        "./media/Poker Face.mp3",
+        "./media/Telephone.mp3"
+    ],
+    "songnames": [
+        "Alejandro",
+        "Bad Romance",
+        "Judas",
+        "Just Dance",
+        "Paparazzi",
+        "Poker Face",
+        "Telephone"
+    ],
+    "defaultsong": "./media/Alejandro.mp3"
+}

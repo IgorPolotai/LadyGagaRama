@@ -1,0 +1,73 @@
+body {
+    height: 100vh;
+}
+
+body, button, select, input, p, #input {
+    background: #eef6fc;
+}
+
+#canvas-container, #controls-container, #main-controls, #slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    text-align: center;
+    margin-left: 100px;
+}
+
+button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: aliceblue;
+}
+
+#visual-container, #audio-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+canvas {
+    background: #cceeff;
+    margin-bottom: 20px;
+}
+
+#controls {
+    margin-left: 1rem;
+}
+
+#volumeLabel, #distortionLabel {
+    margin-left: 1rem;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+#playButton {
+    font-size: 1.2rem;
+    width: 6rem;
+}
+
+button[data-playing="yes"]:after {
+    content: "Pause";
+}
+
+button[data-playing="no"]:after {
+    content: "Play";
+}
+
+#fsButton {
+    font-size: 1.2rem;
+    width: 8rem;
+}
