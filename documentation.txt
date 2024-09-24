@@ -1,0 +1,17 @@
+IGME 330: Rich Media
+Documentation for Web App Refactor
+4/15/24
+Igor Polotai
+
+
+For this homework, I decided to refactor the Ultimate Audio Visualizer. I chose TypeScript.
+
+For the TypeScript portion of this assignment, I basically followed the refactor a project
+into TypeScript guide that was linked in the instructions, so I typed every variable and
+function parameter, used enums and interfaces, etc. The only thing that I did not do is
+do function destructuring. 
+
+For the Bulma, I did very basic things. Just some simple fonts, colors, and margins. I tried
+to get the Bulma dropdown menu working, but ran into too many problems, so kept it as a generic
+HTML Select. Other than that, everything else should be Bulmaified.
+

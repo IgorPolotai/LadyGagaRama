@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <title>Lady Gaga Rama</title>
+    <link href="styles/default-styles.css" type="text/css" rel="stylesheet" />
+    <!-- <script src="src/loader.js" type="module"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="has-background-info-light">
+    <main class="has-background-info-light">
+
+        <nav class="navbar has-shadow is-white">
+            <!--logo / brand-->
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <i class="fas fa-compact-disc"></i>
+              </a>
+              <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+        
+            <div class="navbar-menu" id="nav-links">
+              <div class="navbar-start">
+                <a class="navbar-item"  href="about.html">
+                  About
+                </a>
+        
+                <a class="navbar-item is-hoverable has-text-weight-bold" href="index.html">
+                  App
+                </a>
+              </div> <!-- end navbar-start -->
+            </div>
+          </nav>
+
+        <h1 class="title has-text-weight-bold" ></h1>
+        <div id="canvas-container">
+            <canvas width="800" height="400"></canvas>
+        </div>
+
+        <section id="main-controls">
+            <button class="m-3 button" id="btn-play" data-playing="no"></button>
+            <button class="m-3 button" id="btn-fs">Full Screen</button>
+
+            <label class="m-3">Track: 
+                <select id="track-select"></select>
+            </label>
+ 
+            <!-- Attempt at a Bulma dropdown menu that didn't work out -->
+            <!-- <div class="dropdown is-hoverable m-3">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span id="current-track">Track</span>
+                  <span class="icon is-small">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                  <a href="" class="dropdown-item"> Dropdown item </a>
+                  <a class="dropdown-item"> Other dropdown item </a>
+                </div>
+              </div>
+            </div> -->
+        </section>
+
+        <section id="controls-container">
+
+            <section id="visual-container">
+                <h2 class="subtitle has-text-weight-semibold">Visual Controls</h2>
+                <span><input type="checkbox" id="bars-cb" checked="checked"><label for="bars-cb"> Show Bars</label></span>
+                <span><input type="checkbox" id="circles-cb" checked="checked"><label for="circles-cb"> Show Circles</label></span>
+                <span><input type="checkbox" id="noise-cb"><label for="noise-cb"> Show Noise</label></span>
+                <span><input type="checkbox" id="invert-cb"><label for="invert-cb"> Show Invert</label></span>
+                <span><input type="checkbox" id="emboss-cb"><label for="emboss-cb"> Show Emboss</label></span>
+                <span><input type="checkbox" id="domain-cb"><label for="domain-cb"> Use Time Domain Data</label></span>
+                <br>
+            </section>
+
+            <section id="audio-container">
+                <h2 class="subtitle has-text-weight-semibold">Audio Controls</h2>
+                <div class="slider-container">
+                    Volume: <span id="volume-label"> ???</span>
+                    <br><input type="range" id="volume-slider" min="0" max="2" value="1" step="0.01">
+                </div>
+                <span><input type="checkbox" id="cb-highshelf"><label for="cb-highshelf"> Highshelf Filter (Treble)</label></span>
+                <span><input type="checkbox" id="cb-lowshelf"><label for="cb-lowshelf"> Lowshelf Filter (Bass)</label></span>
+                <span><input type="checkbox" id="cb-distortion"><label for="cb-distortion"> Distortion Filter</label></span>
+                <div class="slider-container">
+                    Distortion Amount: <span id="distortion-label"> ???</span> 
+                    <br><input type="range" id="slider-distortion" min="0" max="2" value="0" step="0.01">
+                </div>
+
+            </section>
+        </section>
+
+        <section id="file-container">
+            <p class="has-background-info-light">Choose Your Own Beat: <input type="file" id="upload" title="Upload File" class="has-background-info-light"/></p>
+        </section>
+    </main>
+
+    <script src="./src/hamburger.js"></script>
+    <script src="./dist/bundle.js"></script>
+</body>
+
+</html>
